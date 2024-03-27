@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/73f734cf-34d4-44a0-82de-46305d151971/resourceGroups/leevisHomepage/providers/Microsoft.Web/sites/leevisHomepage",
+  "appService.deploySubpath": "."
+}
