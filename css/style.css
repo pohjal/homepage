@@ -6,6 +6,7 @@
   transition: opacity 1s ease-in-out;
   opacity: 0; /* Start with both sections hidden */
   display: none; /* Hide sections initially */
+  /* margin-top: 10vh; */
 }
 
 #projects {
@@ -15,16 +16,11 @@
 }
 
 * {
-  margin: 0;
+  /* margin: 0; vaikuttaa korttien kokoon */
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   scroll-behavior: smooth;
-}
-
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 body {
@@ -34,7 +30,12 @@ body {
   margin: 0;
   padding: 0;
   color: #333333;
-  background-color: #ddd0c8;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
 header {
@@ -48,11 +49,16 @@ header {
   transition: top 0.6s;
 }
 .headerItem {
-  font-size: 30px;
+  font-size: 45px;
   margin: 10px;
   text-decoration: none; /* Removes underline from links */
   color: #333333;
   cursor: pointer;
+}
+
+#headerprojects {
+  border-left: 1px solid #333;
+  padding-left: 20px;
 }
 
 .contentbox {
@@ -62,17 +68,11 @@ header {
   align-items: center;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #efefef;
-}
 .slide-container {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
+  /* margin-top: 10vh; */
 }
 .slide-content {
   margin: 0 40px;
@@ -93,6 +93,7 @@ body {
   align-items: center;
   padding: 10px 14px;
 }
+
 .image-content {
   position: relative;
   row-gap: 5px;
@@ -125,7 +126,7 @@ body {
   position: relative;
   height: 150px;
   width: 200px;
-  border-radius: 50%;
+  border-radius: 10px;
   background: #fff;
   padding: 3px;
 }
@@ -141,6 +142,15 @@ body {
   border-radius: 10px;
 }
 
+#pysty {
+  width: auto;
+}
+#pystyKuva {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .name {
   font-size: 18px;
   font-weight: 500;
@@ -149,19 +159,105 @@ body {
 .description {
   font-size: 14px;
   color: #707070;
-  text-align: center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100px;
+  width: 100%;
 }
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
 .button {
   border: none;
   font-size: 16px;
   color: #fff;
   padding: 8px 16px;
-  background-color: #4070f4;
+  background-color: #333;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
+
+.gitButton {
+  background-image: url(/github-mark.svg);
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: fill 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.gitlab {
+  background-image: url(/gitlab-icon.svg);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gitlab:hover {
+  background: rgb(186, 179, 170);
+  background-image: url(/gitlab-icon.svg);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-color: rgb(186, 179, 170);
+}
+.gitButton:hover {
+  background: rgb(186, 179, 170);
+  background-image: url(/github-mark.svg);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+#myFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+
+  width: 100%;
+  transition: top 0.6s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-item {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  transition: fill 0.3s ease; /* Smooth transition for hover effect */
+  margin: 20px;
+}
+#linkedin {
+  background-image: url(/LinkedIn_icon.svg);
+}
+
+#mail {
+  background-image: url(/mail.svg);
+}
+
 .button:hover {
   background: #265df2;
 }
@@ -190,6 +286,16 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
+
+/* About page css ->>*/
+
+#about {
+  /* height: 220vh;
+  width: 100%;
+  background-color: #333; */
+}
+
+/* <-- About page css */
 
 @media screen and (max-width: 768px) {
   .slide-content {

@@ -8,7 +8,7 @@ window.addEventListener(
       window.pageYOffset || document.documentElement.scrollTop;
     if (currentScroll > lastScrollTop) {
       // Scrolling down
-      document.getElementById("myHeader").style.top = "-7vh"; // Adjust this value based on header's height
+      document.getElementById("myHeader").style.top = "-10vh"; // Adjust this value based on header's height
     } else {
       // Scrolling up
       document.getElementById("myHeader").style.top = "0px";
@@ -27,7 +27,7 @@ var swiper = new Swiper(".slide-content", {
   grabCursor: "true",
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: false,
     dynamicBullets: true,
   },
   navigation: {
