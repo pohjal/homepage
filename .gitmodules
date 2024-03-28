@@ -1,8 +1,8 @@
 [submodule "projects/Etch-a-Sketch"]
 	path = projects/Etch-a-Sketch
 	url = https://github.com/pohjal/Etch-a-Sketch.git
-[submodule "projects/Calculator"]
-	path = projects/Calculator
+[submodule "projects/calculator"]
+	path = projects/calculator
 	url = https://github.com/pohjal/Calculator.git
 [submodule "projects/tic-tac-toe"]
 	path = projects/tic-tac-toe
