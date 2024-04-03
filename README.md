@@ -1,4 +1,9 @@
-# homepage
+# Homepage
 
-Homepage project where i showcase my information and my other projects.
+Homepage project purpose
 
+- Showcase my projects
+
+TODO:
+
+- About me section with my basic informations
