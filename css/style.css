@@ -305,7 +305,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .headerItem {
-    font-size: 0%;
+    font-size: 150%;
   }
 
   .slide-content {
