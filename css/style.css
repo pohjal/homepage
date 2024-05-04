@@ -330,9 +330,3 @@ header {
     display: none;
   }
 }
-@media (hover: none) and (pointer: coarse) {
-  .circle {
-      cursor: auto; /* Reverts to the default cursor */
-  }
-
-}

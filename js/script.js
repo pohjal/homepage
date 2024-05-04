@@ -18,7 +18,7 @@ window.addEventListener(
   false
 );
 
-const coords = { x: 0, y: 0 };
+const coords = { x: -10, y: -10 };
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
